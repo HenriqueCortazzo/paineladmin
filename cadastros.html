@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Painel ADM">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Admin Panel</title>
+</head>
+
+<body>
+    <div class="content-group">
+
+        <!-- topo do painel -->
+        <header class="container">
+
+        </header>
+        <!-- fim do topo -->
+
+        <!-- inicio do menu lateral -->
+        <nav class="content">
+
+            <div class="welcome">
+                <div class="logo">
+                    <img width="30px" src="/img/lgo.png" alt="">
+                   <a href="/index.html"><h2> Leovang Technologies</h2></a>
+                </div>
+                <img width="80px" src="/img/profile.png" alt="">
+                <h2>Bem vindo Matheus!</h2>
+                <p>ADM</p>
+            </div>
+
+            <div class="list-item">
+                <ul>
+                    <li> <a href="#"> <img width="20px" src="/img/bar-chart.png" alt=""> <a class="dis" href="">
+                                Cadastros</a></a></li>
+                    <li> <a href="#"> <img width="20px" src="/img/predio-comercial.png" alt=""> <a class="dis" href="">
+                                Departamento</a></a></li>
+                    <li> <a href="#"> <img width="20px" src="/img/user.png" alt=""> <a class="dis" href="">Usuário</a></a></li>
+                    <li><a href="#"> <img width="20px" src="/img/maleta-com-carrapato-dentro.png" alt="">
+                            <a class="dis" href=""> Solicitações</a></a></li>
+                    <li><a class="central-atendimento" href="#"> <img width="20px"
+                                src="/img/maleta-com-carrapato-dentro.png" alt="">
+                            <a class="dis" href=""> Central de Atendimento</a></a></li>
+                    <!-- <li><img width="20px" src="/img/maleta-com-carrapato-dentro.png" alt=""><button>Central de Atendimento</button></li> -->
+                </ul>
+            </div>
+        </nav>
+        <!-- fim menu lateral -->
+
+        <main class="geral">
+            <div class="topo">
+                <div class="search">
+                    <input id="busca" type="text" />
+                    <span id="box_icone_busca">
+                        <i id="icone_busca" class="fa fa-search" onclick="suaFuncaoaqui()"></i>
+                    </span>
+                </div>
+                <div class="navbar">
+                    <ul>
+                        <li><img width="25px" src="/img/sino-de-notificacao.png" alt=""></i></li>
+                    </ul>
+                    <div class="user1">
+                        <img width="25px" src="/img/profile.png" alt="">
+                        <h2>Matheus</h2>
+                        <img onclick="suaFuncaoaqui()" class="seta" width="1px"
+                            src="/img/simbolo-de-variante-triangular-preto-com-seta-para-baixo.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="localhost">
+                <a href="/index.html">
+                    <h2>Painel Administrador/ <a href="#">Cadastros</a></h2>
+                </a>
+            </div>
+            <div class="usuarios-geral">
+                <div class="laterais"></div>
+                <div class="usuarios-cadastrados">
+                    <div class="usuarios-divcentral">
+                        <div class="topo-cadastro">
+                            <h2 class="text">Clientes Cadastrados</h2>
+                            <h3>Leovang Technologies</h3>
+                            <span><a href="cadastrar.cliente.html">Cadastrar Cliente</a></span>
+                        </div>
+                        <div class="conteudo-cadastro">
+                            <div class="grupo1">
+                                <div class="box-users">
+                                    <img src="/img/man3.png" alt="">
+                                    <h2>Leonardo Souza Dias</h2>
+                                    <p>CPF:473.597.310-97</p>
+                                    <p>22 Anos</p>
+                                </div>
+                                <div class="box-users">
+                                    <img src="/img/man2.png" alt="">
+                                    <h2>Rafael Ribeiro VIlasboas</h2>
+                                    <p>CPF:066.349.890-28</p>
+                                    <p>29 Anos</p>
+                                </div>
+                                <div class="box-users">
+                                    <img src="/img/woman4.png" alt="">
+                                    <h2>Stella Carvalho Rebouças</h2>
+                                    <p>CPF: 019.990.920-23</p>
+                                    <p>35 Anos</p>
+                                </div>
+                                <div class="box-users">
+                                    <img src="/img/man3.png" alt="">
+                                    <h2>Eduardo Correia Matos</h2>
+                                    <p>CPF: 640.790.850-79</p>
+                                    <p>18 Anos</p>
+                                </div>
+                                <div class="box-users">
+                                    <img src="/img/man2.png" alt="">
+                                    <h2>Guilherme Cunha Mendes</h2>
+                                    <p>CPF: 104.536.520-34</p>
+                                    <p>45 Anos</p>
+                                </div>
+                            </div>
+                            <div class="grupo2">
+                                <div class="box-users">
+                                    <img src="/img/woman1.png" alt="">
+                                    <h2>Catarina Azevedo</h2>
+                                    <p>CPF: 737.028.780-76</p>
+                                    <p>55 Anos</p>
+                                </div>
+                                <div class="box-users">
+                                    <img src="/img/man1.png" alt="">
+                                    <h2>Carlos Eduardo Alves</h2>
+                                    <p>CPF: 791.519.440-22</p>
+                                    <p>72 Anos</p>
+                                </div>
+                                <div class="box-users">
+                                    <img src="/img/woman.png" alt="">
+                                    <h2>Maria Sofia Carvalho</h2>
+                                    <p>CPF: 791.841.450-05</p>
+                                    <p>27 Anos</p>
+                                </div>
+                                <div class="box-users">
+                                    <img src="/img/man.png" alt="">
+                                    <h2>Luiz Gustavo Teixeira</h2>
+                                    <p>CPF: 637.829.920-08</p>
+                                    <p>41 Anos</p>
+                                </div>
+                                <div class="box-users">
+                                    <img src="/img/man.png" alt="">
+                                    <h2>Gustavo Teixeira Ramos</h2>
+                                    <p>CPF: 137.849.020-58</p>
+                                    <p>45 Anos</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="laterais"></div>
+
+            </div>
+        </main>
+
+
+        <script src="/arq.js"></script>
+</body>

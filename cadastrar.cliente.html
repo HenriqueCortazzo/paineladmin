@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Painel ADM">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Admin Panel</title>
+</head>
+
+<body>
+    <div class="content-group">
+
+        <!-- topo do painel -->
+        <header class="container">
+
+        </header>
+        <!-- fim do topo -->
+
+        <!-- inicio do menu lateral -->
+        <nav class="content">
+
+            <div class="welcome">
+                <div class="logo">
+                    <img width="30px" src="/img/lgo.png" alt="">
+                    <a href="/index.html">
+                        <h2> Leovang Technologies</h2>
+                    </a>
+                </div>
+                <img width="80px" src="/img/profile.png" alt="">
+                <h2>Bem vindo Matheus!</h2>
+                <p>ADM</p>
+            </div>
+
+            <div class="list-item">
+                <ul>
+                    <li> <a href="#"> <img width="20px" src="/img/bar-chart.png" alt=""></a></li>
+                    <li> <a href="#"> <img width="20px" src="/img/predio-comercial.png" alt=""> Depatamento</a></li>
+                    <li> <a href="#"> <img width="20px" src="/img/user.png" alt=""> Usuario</a></li>
+                    <li><a href="#"> <img width="20px" src="/img/maleta-com-carrapato-dentro.png" alt="">
+                            Solicitaçoes</a></li>
+                    <li><a class="central-atendimento" href="#"> <img width="20px"
+                                src="/img/maleta-com-carrapato-dentro.png" alt="">
+                            Central de Atendimento</a></li>
+                    <!-- <li><img width="20px" src="/img/maleta-com-carrapato-dentro.png" alt=""><button>Central de Atendimento</button></li> -->
+                </ul>
+            </div>
+        </nav>
+        <!-- fim menu lateral -->
+
+        <main class="geral">
+            <div class="topo">
+                <div class="search">
+                    <input id="busca" type="text" />
+                    <span id="box_icone_busca">
+                        <i id="icone_busca" class="fa fa-search" onclick="suaFuncaoaqui()"></i>
+                    </span>
+                </div>
+                <div class="navbar">
+                    <ul>
+                        <li><img width="25px" src="/img/sino-de-notificacao.png" alt=""></i></li>
+                    </ul>
+                    <div class="user1">
+                        <img width="25px" src="/img/profile.png" alt="">
+                        <h2>Matheus</h2>
+                        <img onclick="suaFuncaoaqui()" class="seta" width="1px"
+                            src="/img/simbolo-de-variante-triangular-preto-com-seta-para-baixo.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="localhost">
+                <a href="/index.html">
+                    <h2>Painel Administrador/ <a href="cadastros.html">Cadastros</a><a href="cadastrar.cliente.html">/
+                            Processo de Cadastro</a></h2>
+                </a>
+            </div>
+            <div class="form-space">
+                <div class="laterais"></div>
+                <div class="content-cadastrar">
+                    <span><a href="cadastros.html">Voltar</a></span>
+                    <h2>Cadastro de Clientes</h2>
+                    <h3>Leovang Technologies</h3>
+
+                    <div class="formulario">
+                        <form action="/index.html">
+                            <div class="inputs">
+                                <label for="name">Nome:</label>
+                                <input type="text" id="name" name="nome">
+                                <label for="Senha">Senha:</label>
+                                <input type="password" id="Senha" name="nome">
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="nome">
+                            </div>
+                            <div class="inputs1">
+                                <div class="box-input">
+                                    <label for="date">Data de nascimento:</label>
+                                    <input id="datepicker" type="date" id="date" name="nome">
+                                </div>
+
+                                <div class="box-input">
+                                    <label for="Endereço">Endereço:</label>
+                                    <input type="text" id="Endereço" name="nome">
+                                </div>
+                            </div>
+                            <div class="inputs1">
+                                <div class="box-input">
+                                    <label for="estado">Estado:</label>
+                                    <input type="text" value="" id="estado" name="estado">
+                                </div>
+
+                                <div class="box-input">
+                                    <label for="Empresa">Empresa:</label>
+                                    <input type="text" id="Empresa" name="Empresa">
+                                </div>
+                            </div>
+                            <div class="radio-input">
+                                <label for="radio">Gênero:</label>
+                                <div class="radios">
+                                    <input class="radio1" type="radio" name="male" value="1" id="male"> <label
+                                        for="male">Masculino</label>
+                                    <input class="radio1" type="radio" name="male" value="2" id="female"> <label
+                                        for="female">Feminino</label>
+                                    <input class="radio1" type="radio" name="male" value="3" id="orthers"> <label
+                                        for="orthers">Outros</label>
+                                </div>
+                                <input class="submit" type="submit" value="Cadastrar">
+                            </div>
+
+
+                        </form>
+                        <!-- <div class="img-user">
+                            <img width="100px" src="/img/do-utilizador.png" alt="">
+                        </div>  -->
+                    </div>
+                </div>
+                <div class="laterais left-border"></div>
+            </div>
+
+        </main>
+</body>
